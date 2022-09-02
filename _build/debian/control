@@ -1,0 +1,22 @@
+Source: ext-nginx
+Section: admin
+Priority: optional
+Maintainer: z17 Dev <mail@z17.dev>
+Uploaders: z17 Dev <mail@z17.dev>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Homepage: https://pkgstore.gitlab.io
+Vcs-Browser: https://github.com/pkgstore/linux-deb-ext-nginx
+Vcs-Git: https://github.com/pkgstore/linux-deb-ext-nginx.git
+Rules-Requires-Root: no
+
+# -------------------------------------------------------------------------------------------------------------------- #
+# Package: ext-nginx
+# -------------------------------------------------------------------------------------------------------------------- #
+
+Package: ext-nginx
+Architecture: all
+Depends: nginx
+        ,${misc:Depends}
+Description: META-package for install and configure NGINX
+ META-package for install and configure NGINX.
